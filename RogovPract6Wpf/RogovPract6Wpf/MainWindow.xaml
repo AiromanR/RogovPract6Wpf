@@ -6,25 +6,37 @@
         xmlns:local="clr-namespace:RogovPract6Wpf"
         mc:Ignorable="d"
         Title="Регистрация нового пользователя" Height="650" Width="500">
-    <Grid>
-        <DockPanel LastChildFill="False" Background="Aqua">
+    <DockPanel >
+        <DockPanel LastChildFill="False" Background="SlateGray" DockPanel.Dock="Top">
             <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center" >
-                <Button Name="button" Padding="10px" Margin="0 0 15px 0">Главная</Button>
-                <Button Name="button2" Padding="10px" Margin="0 0 15px 0">Профиль</Button>
-                <Button Name="button3" Padding="10px" Margin="0 0 15px 0">Настройки</Button>
-                <Button Name="button4" Padding="10px">Помощь</Button>
+                <Button Name="button" Padding="10px" Margin="0 10px 15px 10px" FontSize="16">Главная</Button>
+                <Button Name="button2" Padding="10px" Margin="0 10px 15px 10px" FontSize="16">Профиль</Button>
+                <Button Name="button3" Padding="10px" Margin="0 10px 15px 10px" FontSize="16">Настройки</Button>
+                <Button Name="button4" Padding="10px" Margin="0 10px 0 10px" FontSize="16">Помощь</Button>
             </StackPanel>
         </DockPanel>
-        <Grid >
+        <Grid DockPanel.Dock="Top">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="500"></ColumnDefinition>
-                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="300"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="500"></RowDefinition>
                 <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
             </Grid.RowDefinitions>
-            <Button Name="button5" Padding="10px">Помощь</Button>
         </Grid>
-    </Grid>
+        <WrapPanel HorizontalAlignment="Stretch" Background="#DCDCDC" Height="100px" DockPanel.Dock="Top"> 
+            <Label Content="* Пароль должен содержать минимум 8 символов."></Label>
+            <Label Content="* Email должен быть в формате name@mail.com."></Label>
+            <Label Content="* Все поля обязательны."></Label>
+        </WrapPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Right" >
+            <Button Name="button5" Padding="10px" Margin="0 10px 15px 10px">Главная</Button>
+            <Button Name="button6" Padding="10px" Margin="0 10px 15px 10px">Профиль</Button>
+        </StackPanel>
+        <DockPanel LastChildFill="False" Height="30px" DockPanel.Dock="Bottom">
+            <Label Content="Готово"></Label>
+        </DockPanel>
+        
+    </DockPanel>
 </Window>
