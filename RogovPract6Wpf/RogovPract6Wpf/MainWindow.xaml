@@ -1,0 +1,30 @@
+﻿<Window x:Class="RogovPract6Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RogovPract6Wpf"
+        mc:Ignorable="d"
+        Title="Регистрация нового пользователя" Height="650" Width="500">
+    <Grid>
+        <DockPanel LastChildFill="False" Background="Aqua">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button Name="button" Padding="10px" Margin="0 0 15px 0">Главная</Button>
+                <Button Name="button2" Padding="10px" Margin="0 0 15px 0">Профиль</Button>
+                <Button Name="button3" Padding="10px" Margin="0 0 15px 0">Настройки</Button>
+                <Button Name="button4" Padding="10px">Помощь</Button>
+            </StackPanel>
+        </DockPanel>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"></ColumnDefinition>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="500"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Name="button5" Padding="10px">Помощь</Button>
+        </Grid>
+    </Grid>
+</Window>
