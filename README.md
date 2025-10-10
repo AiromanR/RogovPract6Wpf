@@ -1,0 +1,1 @@
+# RogovPract6Wpf
